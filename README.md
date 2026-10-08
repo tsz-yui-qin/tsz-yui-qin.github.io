@@ -21,7 +21,7 @@ GitHub Pages publishes the root directory of the `main` branch. Updates pushed t
 
 ## Address and search discovery
 
-This organization site is published at **https://tsz-yui-qin.github.io/**. The original homepage at `https://punktheory.github.io/PersonalWebPage/` will redirect here after the new site is verified live.
+This organization site is published at **https://tsz-yui-qin.github.io/**. The original homepage at `https://punktheory.github.io/PersonalWebPage/` is maintained as an automatic redirect in `Punktheory/PersonalWebPage`.
 
 The approved search configuration is restored: the title and visible biography identify Tsz-Yui Qin (秦子睿 / Qin Tsz Yui), and `ProfilePage`, `Person`, and `WebSite` structured data describe the person and this site. All canonical, sharing, sitemap, and site-name URLs point to the new address. These settings help search engines understand the page and do not guarantee indexing or ranking.
 
