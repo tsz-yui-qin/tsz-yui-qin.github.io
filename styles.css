@@ -25,9 +25,10 @@ li:last-child { margin-bottom: 0; }
 section { padding: 25px 0; border-bottom: 1px solid #e6e6e6; }
 
 .profile-container { display: grid; grid-template-columns: minmax(0, 1fr) 264px; gap: 26px; margin-bottom: 23px; }
-.profile-bio { display: flow-root; }
+.profile-bio { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 20px; align-items: start; min-width: 0; }
+.bio-text { min-width: 0; }
 .profile-bio p:last-child { margin-bottom: 0; }
-.portrait { float: left; width: 170px; height: auto; margin: 5px 20px 10px 0; display: block; }
+.portrait { width: 170px; height: auto; margin: 5px 0 0; display: block; }
 .contact-info { border-left: 1px solid #e0e0e0; padding: 2px 0 2px 24px; }
 .contact-info p { margin-bottom: 9px; }
 .contact-info p:last-child { margin-bottom: 0; }
@@ -69,11 +70,15 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8p
   .contact-info .contact-email { margin: 0 0 7px; }
 }
 
+@media (max-width: 600px) {
+  .profile-bio { grid-template-columns: minmax(0, 1fr); gap: 18px; }
+  .portrait { width: 132px; margin: 0; }
+}
+
 @media (max-width: 480px) {
   body { padding: 20px; }
   h1 { font-size: 1.875rem; margin-bottom: 18px; }
   h2 { font-size: 1.375rem; }
-  .portrait { width: 132px; margin-right: 16px; margin-bottom: 8px; }
   .social-links a + a { margin-left: 14px; padding-left: 14px; }
   .entry-heading { display: block; }
   .date { display: block; margin-top: 4px; }
@@ -82,7 +87,6 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8p
 }
 
 @media (max-width: 350px) {
-  .portrait { float: none; width: 150px; margin: 0 0 18px; }
   .social-links a + a { margin-left: 11px; padding-left: 11px; }
 }
 
@@ -92,6 +96,7 @@ footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8p
   h2 { font-size: 15pt; }
   h3, h4 { font-size: 10pt; }
   .profile-container { grid-template-columns: minmax(0, 1fr) 220px; }
+  .profile-bio { grid-template-columns: 110px minmax(0, 1fr); }
   .portrait { width: 110px; }
   .contact-info { border-top: 0; border-left: 1px solid #ddd; padding: 0 0 0 18px; }
   .contact-info br { display: initial; }
