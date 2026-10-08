@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tsz-yui-qin.github.io/sitemap.xml
